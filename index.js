@@ -6,11 +6,13 @@ import { EXTRACTS } from "./src/config.js";
 import { extractStrings } from "./src/extract.js";
 import { getFilesFromDir } from "./src/files.js";
 import { addResource, writeXliff } from "./src/xliff.js";
+import { checkString, writeSpellcheck } from "./src/spellcheck.js";
 
 const npcDir =
   process.env.NPC_DIRECTORY || path.join(process.cwd(), "tmp", "npc");
 const outputDir =
   process.env.OUTPUT_DIRECTORY || path.join(process.cwd(), "dist");
+const spellcheck = process.env.SPELLCHECK || false;
 
 const files = await getFilesFromDir(npcDir, [".txt"]);
 
@@ -37,8 +39,11 @@ for (let i in files) {
             params,
             extract.limit,
             extract.startPosition
-          ).forEach((param) => {
-            addResource(resource, param);
+          ).forEach((str) => {
+            if (spellcheck) {
+              checkString(str);
+            }
+            addResource(resource, str);
           });
         }
       }
@@ -46,4 +51,7 @@ for (let i in files) {
   });
 }
 
+if (spellcheck) {
+  await writeSpellcheck(outputDir, "typos.json");
+}
 await writeXliff(outputDir, "npc.xliff");
