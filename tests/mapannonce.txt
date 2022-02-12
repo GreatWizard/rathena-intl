@@ -1,0 +1,1 @@
+mapannounce "airplane","We are heading to Einbroch.",bc_map,"0x00ff00";

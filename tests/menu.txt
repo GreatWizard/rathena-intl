@@ -1,0 +1,1 @@
+menu "Claim Prize",L_Claim,"Buy New Ticket",L_Buy,"Cancel",L_Cancel;

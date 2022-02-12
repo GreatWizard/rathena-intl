@@ -1,0 +1,81 @@
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US">
+  <file id="annonce">
+    <unit id="2c8205a3c2790ebcf1aaecbf7bf137b2">
+      <segment>
+        <source>"This will be shown to everyone at all in yellow."</source>
+      </segment>
+    </unit>
+  </file>
+  <file id="areaannonce">
+    <unit id="e5b72542fa3fcd4565f2eec9161445c4">
+      <segment>
+        <source>"God's in his heaven, all right with the world"</source>
+      </segment>
+    </unit>
+  </file>
+  <file id="instance_announce">
+    <unit id="303b5c8988601647873b4ffd247d83cb">
+      <segment>
+        <source>"test"</source>
+      </segment>
+    </unit>
+  </file>
+  <file id="mapannonce">
+    <unit id="31207ce36aff935eeed8c3989d32556d">
+      <segment>
+        <source>"We are heading to Einbroch."</source>
+      </segment>
+    </unit>
+  </file>
+  <file id="menu">
+    <unit id="07574386bcaab30b8a2927e88d18b785">
+      <segment>
+        <source>"Claim Prize"</source>
+      </segment>
+    </unit>
+    <unit id="d1950def03146f541d8b3f05298f5774">
+      <segment>
+        <source>"Buy New Ticket"</source>
+      </segment>
+    </unit>
+    <unit id="e8fe095cd9637e939c0f60d651d4bbf3">
+      <segment>
+        <source>"Cancel"</source>
+      </segment>
+    </unit>
+  </file>
+  <file id="mes">
+    <unit id="2b629e59eb03ce91483af17c89aeb7cb">
+      <segment>
+        <source>"[Iris]"</source>
+      </segment>
+    </unit>
+    <unit id="1222718d6b4380e5a822a10153f29284">
+      <segment>
+        <source>"I am not the one you should thank."</source>
+      </segment>
+    </unit>
+    <unit id="9664f760f4038964b7a2f8b1166c2570">
+      <segment>
+        <source>"Thank that adventurer, " + strcharinfo(0) + "."</source>
+      </segment>
+    </unit>
+    <unit id="6bb42aa1508a609368115d7c1c6d65aa">
+      <segment>
+        <source>"It could have been much worse."</source>
+      </segment>
+    </unit>
+    <unit id="91daac4fe947317ccfe8b681d069f3ff">
+      <segment>
+        <source>"Negative 10 is "</source>
+      </segment>
+    </unit>
+  </file>
+  <file id="unittalk">
+    <unit id="68cfa32c029d0517b9bdf01c626691ff">
+      <segment>
+        <source>"Time to teach them a lesson~!"</source>
+      </segment>
+    </unit>
+  </file>
+</xliff>

@@ -1,0 +1,30 @@
+{
+  "name": "rathena-intl",
+  "version": "0.0.0",
+  "description": "This project intends to translate rAthena NPC texts in many languages.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "preinstall": "rm -rf tmp && mkdir -p dist && git clone --depth 1 https://github.com/rathena/rathena.git tmp",
+    "start": "node index.js",
+    "test": "NPC_DIRECTORY='tests/' yarn start && diff tests/output.xliff dist/npc.xliff"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreatWizard/rathena-intl.git"
+  },
+  "license": "AGPL-3.0-or-later",
+  "author": {
+    "name": "Guillaume Gérard",
+    "url": "https://guillaume.sh"
+  },
+  "bugs": {
+    "url": "https://github.com/GreatWizard/rathena-intl/issues"
+  },
+  "homepage": "https://github.com/GreatWizard/rathena-intl#readme",
+  "devDependencies": {
+    "md5": "^2.3.0",
+    "slugify": "^1.6.5",
+    "xliff": "^6.0.1"
+  }
+}

@@ -1,0 +1,1 @@
+areaannounce "prt_church",0,0,350,350,"God's in his heaven, all right with the world",0;

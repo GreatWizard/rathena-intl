@@ -1,0 +1,4 @@
+mes "[Iris]";
+mes "[Iris]","I am not the one you should thank.";
+mes "[Iris]", "I am not the one you should thank.", "Thank that adventurer, " + strcharinfo(0) + ".", "It could have been much worse."; next;
+mes "Negative 10 is " + (-.@myvar);
